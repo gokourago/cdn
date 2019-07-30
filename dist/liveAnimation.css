@@ -1,0 +1,48 @@
+.ping {
+  -webkit-animation: ping 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+    alternate both;
+  animation: ping 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate
+    both;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0 2px;
+}
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
